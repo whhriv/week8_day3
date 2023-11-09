@@ -38,9 +38,14 @@ function removeFromCart(itemToRemove, user) {
 }
 // removeQuantityFromCart -this function will bring an object of Item Type and an User object and a quantity of the item to remove and it will remove the quantity amount of instances of the item to the users cart (so if the cart had 5 red hats and we pass inthe red hat item and the number 3 for the quantitiy we would end up with 2 red hats left in the cart)
 // function removeQuantityFromCart(itemToRemove:Items, user:User, quantity:number):User{
-//     //let itemIndex = user.cart.findIndex((item) => item.id === itemToRemove.id)
 //     return user
 // }
+function removeQuantityFromCart(itemToRemove, user, quantity) {
+    for (let i = 0; i <= quantity; i++) {
+        removeFromCart(itemToRemove, user);
+    }
+    return user;
+}
 // cartTotal - this function will calculate the total price of all items in our cart and RETURNS that value
 function cartTotal(user) {
     let total = 0;
@@ -96,6 +101,6 @@ removeFromCart(itemB, user);
 printCart(user);
 console.log(cartTotal(user));
 console.log("============================================");
-// removeQuantityFromCart(itemC, user, 2)
+removeQuantityFromCart(itemC, user, 2);
 printCart(user);
 console.log(cartTotal(user));

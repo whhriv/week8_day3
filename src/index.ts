@@ -64,7 +64,7 @@ function removeFromCart(itemToRemove: Items, user:User): User {
 // removeQuantityFromCart -this function will bring an object of Item Type and an User object and a quantity of the item to remove and it will remove the quantity amount of instances of the item to the users cart (so if the cart had 5 red hats and we pass inthe red hat item and the number 3 for the quantitiy we would end up with 2 red hats left in the cart)
 
 // function removeQuantityFromCart(itemToRemove:Items, user:User, quantity:number):User{
-//     //let itemIndex = user.cart.findIndex((item) => item.id === itemToRemove.id)
+//     //let itemIndex = user.cart.findIndex((item) => item.itemId === itemToRemove.itemId)
 //     return user
 // }
 
