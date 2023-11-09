@@ -44,9 +44,9 @@ function cartTotal(user) {
     return total;
 }
 function printCart(user) {
-    console.log("User's cart:\n");
+    console.log(`${user.name}'s cart:\n`);
     for (let item of user.cart) {
-        console.log('\n- - - - - - - - - - - - - - - - - - - ');
+        console.log('\n- - - - - - - - - - - - - - - - - - - - - - ');
         console.log(`ItemID: ${item.itemId}`);
         console.log(`Name: ${item.itemName}`);
         console.log(`Price: ${item.price}`);
@@ -60,29 +60,39 @@ let itemB = createItem('SharpEye Modern2', 850.00, 'Modern Fish shortboard with 
 let itemC = createItem('Hot Sauce', 5.00, 'Daves insanity Ghost pepper hot sauce');
 printCart(user);
 console.log('Total: ', cartTotal(user));
-console.log("\n============================================\n");
+console.log("\n=============================================");
+console.log("| | | | | | | | | | | | | | | | | | | | | | |");
+console.log("=============================================\n");
 addToCart(itemA, user);
 printCart(user);
 console.log('Total: ', cartTotal(user));
-console.log("\n============================================\n");
+console.log("\n=============================================");
+console.log("| | | | | | | | | | | | | | | | | | | | | | |");
+console.log("=============================================\n");
 addToCart(itemB, user);
 addToCart(itemB, user);
 addToCart(itemB, user);
 printCart(user);
 console.log('Total: ', cartTotal(user));
-console.log("\n============================================\n");
+console.log("\n=============================================");
+console.log("| | | | | | | | | | | | | | | | | | | | | | |");
+console.log("=============================================\n");
 addToCart(itemC, user);
 addToCart(itemC, user);
 addToCart(itemC, user);
 printCart(user);
 console.log('Total: ', cartTotal(user));
-console.log("\n============================================\n");
+console.log("\n=============================================");
+console.log("| | | | | | | | | | | | | | | | | | | | | | |");
+console.log("=============================================\n");
 removeFromCart(itemB, user);
 removeFromCart(itemB, user);
 removeFromCart(itemB, user);
 printCart(user);
 console.log('Total: ', cartTotal(user));
-console.log("\n============================================\n");
+console.log("\n=============================================");
+console.log("| | | | | | | | | | | | | | | | | | | | | | |");
+console.log("=============================================\n");
 removeQuantityFromCart(itemC, user, 2);
 printCart(user);
 console.log('Total: ', cartTotal(user));
