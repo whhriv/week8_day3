@@ -104,10 +104,18 @@ let itemA = createItem('Ascic Escalante', 120.00, 'Zero drop running kicks')
 let itemB = createItem('SharpEye Modern2', 830.00, 'Modern Fish shortboard with MR twins')
 let itemC = createItem('Hot Sauce', 5.00, 'Daves insanity Ghost pepper hot sauce')
 
+
+
+printCart(user)
+console.log("============================================")
+
+
+
 addToCart(itemA, user)
 printCart(user)
 console.log(cartTotal(user))
 
+console.log("============================================")
 // addToCart(itemB, user)
 // addToCart(itemC, user)
 
@@ -117,7 +125,7 @@ addToCart(itemB, user)
 
 printCart(user)
 console.log(cartTotal(user))
-
+console.log("============================================")
 addToCart(itemC, user)
 addToCart(itemC, user)
 addToCart(itemC, user)
@@ -125,7 +133,7 @@ addToCart(itemC, user)
 printCart(user)
 console.log(cartTotal(user))
 
-
+console.log("============================================")
 removeFromCart(itemB, user)
 removeFromCart(itemB, user)
 removeFromCart(itemB, user)
@@ -133,6 +141,7 @@ removeFromCart(itemB, user)
 printCart(user)
 console.log(cartTotal(user))
 
+console.log("============================================")
 
 // removeQuantityFromCart(itemC, user, 2)
 printCart(user)
